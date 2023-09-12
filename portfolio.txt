@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student's personal portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {      
+          background-color: rgb(12, 12, 37);
+
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:80px ;
+            background-color: rgb(18, 18, 36);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            
+            color: rgb(177, 177, 226);
+            font-size: 1.03rem;
+        }
+        main hr{
+            border: 0;
+            background-color: #9c9c9c;
+            height: 1.3px;
+            margin: 40px 83px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 150px 0;
+        }
+        .firstsection > div{
+            width: 30%;
+
+        }
+        .leftsection{
+            font-size: 3rem;
+        }
+        .rightsection img{
+            width: 80%;
+        }
+        .blue{
+             color: rgb(158, 95, 216);
+        }
+        .text-blue{
+            color: gray;}
+        #element{
+            color: rgb(148, 148, 243);
+        }
+        .secondsection{
+            max-width:80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 1.8rem;
+        }
+        
+         .secondsection .box{
+          background:white;
+          width:80vw;
+          height:2px;
+          margin:56px 0;
+          display: flex;
+         }
+         .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin:0 100px;
+         }
+         .vertical-title{
+            position:relative;
+            top: 75px;
+            width: 150px;
+            font-size: 1.2rem;
+
+         }
+         .contact {
+            background:rgb(16,16,46);
+
+             position: relative;
+             height: 92vh;
+        }
+
+         .contact-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color:white;
+  padding-bottom: 0.5rem;
+}
+
+.contact-content .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contact-content .links {
+  color: #25b79f;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #25b79f;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover{
+  color: #f0f0e6;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" id="Home">Adiba's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection" id="about">
+                I am  <span class="blue">Adiba Ahmed</span>
+                <div>currently persuing B.tech from the Domain of</div>
+                <div>Computer Science and Engineering</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="https://tbcdn.talentbrew.com/company/234/cms/illustrations/animation_virtual-interview.gif" alt="">
+            </div>
+        </section>
+        <section class="secondsection" id="work">
+        <hr>
+        <span class="text-blue">What i have done until now</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+            <div class="vertical">
+            <div class="vertical-title">Python Programmer</div></div>
+            <div class="vertical"><div class="vertical-title">MysQL</div></div>
+            <div class="vertical"> <div class="vertical-title">Front-end Development</div></div>
+            <div class="vertical"><div class="vertical-title">Java Programmer</div></div>
+        </div>
+    </section>
+    <div class="contact" id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <h2>Contact Me</h2>
+            <p class="mail">
+              Get in touch with me --- > adibaahmed8642@gmail.com
+            </p>
+            <p class="links">Or find me on:</p>
+            <a href="https://www.linkedin.com/in/adiba-ahmed-77965723a" target="blank"><i class="fab fa-linkedin">Linkedin</i></a>
+            <a href="https://codepen.io/Adiba-123/pen/vYvgpJo" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['With the enthusiam to learn New technologies'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
